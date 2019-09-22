@@ -1,15 +1,6 @@
-def liter_num(n):
-    for x in range(0, n):
-        yield (x)
+def iter_num(n):
+    for i in range(1,n):
+        yield i
 
-n=int(input("n"))
-numbers=[]
-numbers.append(liter_num)
 
-numbers=list(numbers)
-
-print(numbers)
-
-#print(liter_num)
-for e in numbers:
-    print(e)
+print(next(iter_num(8)))
