@@ -8,9 +8,10 @@ args = parser.parse_args()
 today = datetime.date.today()
 print(today)
 
-#if args.year and args.day:
-that_year = datetime.timedelta(days=365*args.year)
-that_day = datetime.timedelta(days = args.day)
+
+if args.year and args.day:
+    that_year = datetime.timedelta(days=365*args.year)
+    that_day = datetime.timedelta(days = args.day)
 
 
 print( today + that_day)
